@@ -55,3 +55,27 @@ enlace:
 **Solicitud:** Ahora lo mismo que tienes pero para registrarse, añadiendo nombre, correo, contraseña y confirmar contraseña.
 
 **Resultado:** Recibo lo esperado por lo que mantengo el resultado.
+
+### Página Ejercicios Movil
+
+**Solicitud:** Quiero que se respete la gerarquia de la informacion, que sea mas comprensible y usable, que los dias se entiendan como rutinas creadas y que el diseño sea suave a la vista.
+
+**Reiteracion:** Quiero que elimines el textito "personalizador" y que lo de adicion de pesos no sea a 5 dias puesto que no todo el mundo entrena 5 dias, son rutinas creadas, quiero que una esté iniciada y que ponga el porcentaje por el que vas.
+
+**Resultado:** Tras la segunda petición recibo lo esperado y me lo quedo.
+
+### Página crear Rutina Móvil
+
+**Solicitud:** Ahora vamos con el apartado de crear rutinas, quiero que se entienda perfectamente, que tenga un diseño mas suave, que sea usable y accesible y que se entienda como crear las rutinas, que incite a crearla con la jerarquia de la informacion.
+
+**Reiteracion:** Quiero que elimines el texto paso 1 de 2, lo de configurar series ya que eso se pondra en cada sesion, el texto "ultima serie al fallo excéntrico" lo de Fallo y el numero de series, reps y descanso.
+
+**Segunda** **Reiteración:** quita lo de 1/5 ejercicios porque no tienen por que ser 5, que puedan ser las que yo quiera asi que pon 3 ejercicios con nombre y un + por si quiere meter mas.
+
+**Resultado:** Ha realizado la página Crear rutina a la perfección tras varias iteraciones, dando así un resultado reconfortante.
+
+### Página Calorías Móvil
+
+**Solicitud:** Ahora quiero la página de las calorías, quiero que tenga una interfaz que se entienda a la hora de hacer el cálculo, quiero que la interfaz sea suave, quiero que lo de calorias de hoy los porcentajes rodeen el emoji y se vean de una forma efectiva respetando la jerarquia de la informacion.
+
+**Reiteración:** Quiero que lo de calorias de hoy no sea exactamente un ciruclo si no 3/4 de circulo dejando libre lo superior y sea un fuego en emoji sin cuadrado.
