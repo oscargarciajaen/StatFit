@@ -14,6 +14,10 @@
 
 # Changelog Orbita 2
 
+## Obtencion de la paleta de colores
+
+Para la paleta de colores he utilizado la herramienta [Coolors](https://coolors.co/)
+
 ## Mejora del wireframe
 
 enlace: 
@@ -79,3 +83,16 @@ enlace:
 **Solicitud:** Ahora quiero la página de las calorías, quiero que tenga una interfaz que se entienda a la hora de hacer el cálculo, quiero que la interfaz sea suave, quiero que lo de calorias de hoy los porcentajes rodeen el emoji y se vean de una forma efectiva respetando la jerarquia de la informacion.
 
 **Reiteración:** Quiero que lo de calorias de hoy no sea exactamente un ciruclo si no 3/4 de circulo dejando libre lo superior y sea un fuego en emoji sin cuadrado.
+
+### Página Ejercicios PC
+
+**Solicitud:** Quiero que implementes la jerarquía de la informacio en este wireframe, que lo mantengas en blanco y negro, que sigas con el mismo estilo que los anteriores y que hagas el diseño más suave a la vista. Quiero que le des un estilo minimalista a mi wireframe para que sea mas agradable a la vista y no esté sobrecargado de información.
+
+### Página Calorías PC
+
+**Solicitud:** Quiero que implementes la jerarquía de la información a este wireframe dandole un estilo mas minimalista, quiero que al cálculo le añadas los parámetros peso, altura, edad, sexo, tipo de actividad y objetivo. Quiero que hagas una distincion entre los porcentajes calóricos en cada comida y que el icono sea envuelto por el total de las calorías.
+
+### Página Creación de rutinas PC
+
+**Solicitud:** Quiero que implementes la jerarquía de la información a este wireframe dandole un estilo mas minimalista, quiero que la parte de la rutina se vea representada en la tarjeta y que englobe el resto de ejercicios seleccionados y se presenten el número de series.
+
