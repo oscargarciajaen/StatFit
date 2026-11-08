@@ -3,7 +3,7 @@
 ## Redacción del mvp
 
 **Solicitud:** A través de una redacción de las funcionalidades de mi proyecto solicite que me las ordenase según mi sitemap para redactar mi mvp.
-
+989B9E
 **Resultado:** Mantuve la mayoria de la respuesta ya que practicamente era ordenar las funcionalidades que le pasé en las páginas de mi sitemap.
 
 ## Creacion de la tabla de las competencias
@@ -20,7 +20,7 @@ Para la paleta de colores he utilizado la herramienta [Coolors](https://coolors.
 
 ## Mejora del wireframe
 
-enlace: 
+enlace: https://www.figma.com/design/RqiIGZY7iPJUw13sSzmsHh/interfaz-web-del-proyecto-oscar?node-id=354-1835&t=xPQrJym04pCvMDtq-0
 
 ### Inicio móvil
 
