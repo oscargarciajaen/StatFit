@@ -1,12 +1,11 @@
-import { mostrar } from "./ui.js";
-import { implementarEjercicios} from "./ui.js";
+import {implementarMusculos, mostrar} from "./ui.js";
 
-const boton = document.querySelector('.rutina__crearEjercicio')
+const boton = document.querySelector('.crearEjercicio__ejercicioAñadir')
 
 addEventListener("DOMContentLoaded", () => {
     boton.addEventListener("click", () => {
         mostrar();
-        implementarEjercicios();
+        implementarMusculos();
     });
 });
 

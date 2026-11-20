@@ -1,4 +1,28 @@
-import {ejercicios} from "./datos.js";
+import {
+    biceps,
+    piernas,
+    pecho,
+    espalda,
+    hombros,
+    triceps,
+    abdomen,
+    dorsales,
+    trapecio,
+    antebrazo
+} from "./datos.js";
+
+const listaGrupos = [
+    { nombre: "Bíceps", lista: biceps },
+    { nombre: "Piernas", lista: piernas },
+    { nombre: "Pecho", lista: pecho },
+    { nombre: "Espalda", lista: espalda },
+    { nombre: "Hombros", lista: hombros },
+    { nombre: "Tríceps", lista: triceps },
+    { nombre: "Abdomen", lista: abdomen },
+    { nombre: "Dorsales", lista: dorsales },
+    { nombre: "Trapecio", lista: trapecio },
+    { nombre: "Antebrazo", lista: antebrazo }
+];
 
 export const listadoOculto = document.querySelector('.rutina__mostrarEjercicios');
 const detalles = document.querySelector('.detalleEjercicio')
@@ -25,9 +49,13 @@ function limpiarDetalles(){
     }
 }
 
-export function implementarEjercicios(){
+export function implementarEjercicios(musculo) {
     limpiar()
-    ejercicios.forEach(element => {
+
+    const tabla = document.createElement("table")
+    const tbody = document.createElement("tbody")
+
+    musculo.forEach(element => {
         const row = document.createElement('tr')
         row.className = "mostrarEjercicios__row"
 
@@ -40,14 +68,16 @@ export function implementarEjercicios(){
         descripcionTd.className = "row__tdDescripcion"
 
         row.addEventListener("click", () => {
-            construirDetalles(element);
-            mostrarDetalles();
-        });
+            construirDetalles(element)
+            mostrarDetalles()
+        })
 
-        row.appendChild(nombreTd)
-        row.appendChild(descripcionTd)
-        listadoOculto.appendChild(row)
+        row.append(nombreTd, descripcionTd)
+        tbody.appendChild(row)
     })
+
+    tabla.appendChild(tbody)
+    listadoOculto.appendChild(tabla)
 }
 
 function construirDetalles(e) {
@@ -67,5 +97,31 @@ function construirDetalles(e) {
     card.appendChild(nombre);
     card.appendChild(img);
     card.appendChild(descripcion);
+}
+
+export function implementarMusculos() {
+    limpiar();
+
+    const tabla = document.createElement("table");
+    const tbody = document.createElement("tbody");
+
+    listaGrupos.forEach((it) => {
+        const row = document.createElement("tr");
+        const tdNombre = document.createElement("td");
+
+        tdNombre.textContent = it.nombre;
+        tdNombre.className = "mostrarEjercicios__musculo";
+
+        row.addEventListener("click", () => {
+            implementarEjercicios(it.lista);
+            mostrar();
+        });
+
+        row.appendChild(tdNombre);
+        tbody.appendChild(row);
+    });
+
+    tabla.appendChild(tbody);
+    listadoOculto.appendChild(tabla);
 }
 

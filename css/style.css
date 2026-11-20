@@ -502,3 +502,33 @@ body {
   font-size: 0.95rem;
   color: #f4f6f8;
 }
+
+.mostrarEjercicios__musculo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.rutina__mostrarEjercicios table,
+.rutina__mostrarEjercicios tbody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.6rem;
+}
+
+.rutina__mostrarEjercicios tr {
+  display: flex;
+  width: 100%;
+}
