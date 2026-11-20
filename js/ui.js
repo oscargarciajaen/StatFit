@@ -36,6 +36,22 @@ function mostrarDetalles(){
     detalles.style.visibility = "visible";
 }
 
+function ocultar() {
+    listadoOculto.style.visibility = "hidden"
+}
+
+function ocultarDetalles(){
+    detalles.style.visibility = "hidden";
+}
+
+function ponerX(funcion){
+    const x = document.createElement("p")
+    x.textContent = "X"
+    x.className = "boton__volver"
+    x.addEventListener("click", funcion)
+    return x
+}
+
 function limpiar(){
     while(listadoOculto.children.length > 0){
         listadoOculto.removeChild(listadoOculto.firstChild)
@@ -51,6 +67,7 @@ function limpiarDetalles(){
 
 export function implementarEjercicios(musculo) {
     limpiar()
+    listadoOculto.appendChild(ponerX(implementarMusculos))
 
     const tabla = document.createElement("table")
     const tbody = document.createElement("tbody")
@@ -83,6 +100,7 @@ export function implementarEjercicios(musculo) {
 function construirDetalles(e) {
     limpiarDetalles()
 
+
     const nombre = document.createElement("h1")
     nombre.className = "detalleEjercicio__nombre"
     const descripcion = document.createElement("p")
@@ -94,6 +112,7 @@ function construirDetalles(e) {
     descripcion.textContent = e.descripcion
     img.src = e.img
 
+    card.appendChild(ponerX(ocultarDetalles));
     card.appendChild(nombre);
     card.appendChild(img);
     card.appendChild(descripcion);
@@ -101,6 +120,7 @@ function construirDetalles(e) {
 
 export function implementarMusculos() {
     limpiar();
+    listadoOculto.appendChild(ponerX(ocultar));
 
     const tabla = document.createElement("table");
     const tbody = document.createElement("tbody");
