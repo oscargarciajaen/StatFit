@@ -2,14 +2,28 @@
 
 ## Backlog
 
-- Listar grupos musculares
-- Listar ejercicios de cada musculo
-- Mostrar detalles de cada ejercicio
-- Calcular calorías
-- Registrarse/iniciarSesion
-- Calcular porcentaje de calorias por comida
-- Cambiar modo Claro/Oscuro
-- Adición de pesos
+Ordenadas de más a menos prioridad, según dependencias y aporte a la app.
+
+### Hecho
+
+1. **Listar grupos musculares**: base de todo el flujo de rutinas.
+2. **Listar ejercicios de cada músculo**: depende del punto 1.
+3. **Mostrar detalles de cada ejercicio**: completa el flujo de consulta.
+
+### Siguiente bloque (funcionalidad núcleo)
+
+4. **Calcular calorías**: segunda función principal de la app (`calorias.html`) e independiente del login.
+5. **Calcular porcentaje de calorías por comida**: depende del cálculo de calorías, por eso va justo después.
+
+### Personalización de la rutina
+
+6. **Adición de pesos**: hace útil la rutina al registrar cuánto levantas.
+
+### Extras
+
+7. **Registrarse / iniciar sesión**
+8. **Cambiar modo claro/oscuro**
+
 
 ## Mapa de pantallas y datos que muestran
 
