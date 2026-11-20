@@ -5,7 +5,7 @@ const curlBiceps = {
 };
 
 const curlMartillo = {
-    img: "assets/martillo.jpeg",
+    img: "assets/martillo.jpg",
     nombre: "Curl martillo",
     descripcion: "El curl martillo es un ejercicio de brazos que consiste en flexionar los codos sosteniendo mancuernas con las palmas enfrentadas entre sí (agarre neutro) durante todo el recorrido."
 };
@@ -17,7 +17,7 @@ const sentadilla = {
 };
 
 const zancadas = {
-    img: "assets/zancadas.jpeg",
+    img: "assets/zancada.jpeg",
     nombre: "Zancadas",
     descripcion: "Las zancadas (lunges) son un ejercicio clave de fuerza para trabajar piernas y glúteos de forma unilateral. Al entrenar cada pierna por separado, ganas equilibrio y corriges descompensaciones musculares."
 };
@@ -29,7 +29,7 @@ const flexiones = {
 };
 
 const pressPlano = {
-    img: "assets/pressPlano.jpeg",
+    img: "assets/pressPlano.jpg",
     nombre: "Press Plano",
     descripcion: "El press de banca plano es un ejercicio básico de fuerza en el que te tumbas boca arriba sobre un banco horizontal para empujar un peso (barra o mancuernas) desde el pecho hacia arriba. Su objetivo principal es desarrollar el pectoral mayor, trabajando de forma secundaria los hombros anteriores y los tríceps."
 };
@@ -41,7 +41,7 @@ const pesoMuerto = {
 };
 
 const remoConMancuernas = {
-    img: "assets/remoConMancuerna.jpeg",
+    img: "assets/remoConMancuernas.jpg",
     nombre: "Remo con mancuernas",
     descripcion: "El remo bajo con mancuernas es un ejercicio de tracción horizontal ideal para ganar fuerza y volumen en la espalda (dorsal ancho, romboides y trapecio), trabajando además los bíceps y la zona media como estabilizadores."
 };
@@ -65,7 +65,7 @@ const elevacionesLaterales = {
 };
 
 const extensionTricepsPolea = {
-    img: "",
+    img: "assets/tricepsPolea.jpg",
     nombre: "Extensión de tríceps en polea",
     descripcion: "La extensión de tríceps en polea consiste en mantener los codos pegados a los costados y extender los antebrazos hacia abajo empujando el agarre hasta bloquear el recorrido."
 };
@@ -83,7 +83,7 @@ const crunchAbdominal = {
 };
 
 const jalonAlPecho = {
-    img: "assets/jalonAlPech.jpeg",
+    img: "assets/jalonAlPecho.jpeg",
     nombre: "Jalón al pecho",
     descripcion: "El jalón al pecho consiste en tirar de la barra de la polea hacia la parte superior del pecho llevando los codos hacia abajo y atrás, manteniendo el torso ligeramente inclinado y el pecho alto."
 };
@@ -101,13 +101,13 @@ const encogimientosConMancuernas = {
 };
 
 const encogimientosConBarra = {
-    img: "assets/encogimientos.jpg",
+    img: "assets/encogimientosBarra.jpg",
     nombre: "Encogimientos con barra",
     descripcion: "Los encogimientos con barra consisten en sostener una barra frente a los muslos y elevar los hombros sin flexionar los codos para enfocar el trabajo en el trapecio."
 };
 
 const curlMunecaPronacion = {
-    img: "assets/curlMuneca.jpg",
+    img: "assets/curlMuñeca.jpg",
     nombre: "Curl de muñeca en pronación",
     descripcion: "El curl de muñeca en pronación consiste en apoyar los antebrazos sobre un banco con las palmas hacia abajo y extender las muñecas hacia arriba para trabajar los extensores del antebrazo."
 };
