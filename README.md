@@ -2,5 +2,37 @@
 
 ## Backlog
 
-- Creación de rutinas
-- 
+- Listar grupos musculares
+- Listar ejercicios de cada musculo
+- Mostrar detalles de cada ejercicio
+- Calcular calorías
+- Registrarse/iniciarSesion
+- Calcular porcentaje de calorias por comida
+- Cambiar modo Claro/Oscuro
+- Adición de pesos
+
+## Mapa de pantallas y datos que muestran
+
+* **Vista: Inicio**
+  * **Datos:** Menú superior (Inicio, Ejercicios, Calorías y tema), mensaje de bienvenida, botones de acceso (*Inicia Sesión*, *Regístrate*), modalidades de rutinas (*Calistenia*, *Casa*, *Gimnasio*) y resumen rápido de calorías (consumidas con barra de progreso y calorias quemadas).
+  * **Navegación:** Lleva a *Login/Registro*, *Creación de rutinas*, *Ejercicios* y *Calorías*.
+
+* **Vista: Inicio de Sesión**
+  * **Datos:** Menú superior común, formulario de acceso (correo electrónico y contraseña) y enlace a registro.
+  * **Navegación:** Lleva a *Registro*, *Creación de rutinas*, *Ejercicios* y *Calorías*.
+
+* **Vista: Registro**
+  * **Datos:** Menú superior común, formulario de alta (nombre completo, correo electrónico, contraseña y confirmar contraseña) y enlace a inicio de sesión.
+  * **Navegación:** Lleva a *Inicio de sesion*, *Creación de rutinas*, *Ejercicios* y *Calorías*.
+
+* **Vista: Ejercicios**
+  * **Datos:** Menú superior común, cabecera con acceso directo a crear rutina (*Crea aquí tu rutina*), modalidades de entrenamiento (*Calistenia*, *Casa*, *Gimnasio*) y listado de días/rutinas para registrar pesos (*Día de Pecho*, *Día de espalda*, *Día de pierna*, *Día de Full body*).
+  * **Navegación:** Lleva al formulario/vista de *Creación de rutinas* y a la vista de *Registro de pesos* de cada día ademas de *Login/Registro*, *Creación de rutinas*, *Ejercicios* y *Calorías*.
+
+* **Vista: Calorías**
+    * **Datos:** Menú superior común, barras de progreso de comidas (*Desayuno* y tres bloques etiquetados como *Almuerzo*), selectores de datos personales (*KG*, *CM*, *años*, sexo/selector *Hombre >*, *Frecuencia*, *Objetivo*) y cálculo/total calórico mostrado.
+    * **Navegación:** Lleva a *Inicio*, *Login/Registro*, *Ejercicios* y *Calorías*
+
+* **Vista: Creación y Detalle de Rutinas**
+  * **Datos:** Menú superior común, panel de visualización de rutina existente con su nombre (*Teta al fallo*) y listado de ejercicios con el número de series, y panel de *Crear Rutina* con (`+`) para añadir ejercicios.
+  * **Navegación:** Lleva a *Inicio*, *Ejercicios*, *Calorías* o abre el selector para añadir ejercicios a la ranura (`+`).
