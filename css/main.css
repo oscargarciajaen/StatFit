@@ -1,5 +1,20 @@
-@import url('https://googleapis.com');
+@charset "UTF-8";
+@import url("https://googleapis.com");
+:root {
+  --color-primary: #52FFB8;
+  --color-surface: #CABAC8;
+  --color-on-surface: #2F323A;
+  --color-background: #1F2228;
+}
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-primary: #CBD4C2;
+    --color-surface: #FFFCFF;
+    --color-on-surface: #50514F;
+    --color-background: #989B9E;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,22 +27,6 @@ html, body {
   overflow: hidden;
 }
 
-:root {
-  --color-primary: #52FFB8;
-  --color-surface: #CABAC8;
-  --color-on-surface: #2F323A;
-  --color-background: #1F2228;
-}
-
-@media (prefers-color-scheme: light) {
-:root {
-  --color-primary: #CBD4C2;
-  --color-surface: #FFFCFF;
-  --color-on-surface: #50514F;
-  --color-background: #989B9E;
-  }
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -38,12 +37,63 @@ body {
   height: 100vh;
 }
 
-/* Header */
-
-.cabeceraUl__imgInicioSesion {
-  width: 15%;
-  height: 100%;
+.mainInicio {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-row: repeat(2, 1fr);
+  justify-items: center;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+.mainInicio__sectionInicioCaloriasEjercicios {
+  margin-top: 2rem;
+  width: 75%;
+  display: flex;
+  height: 80%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.mainInicio__sectionCaloriasInicio {
+  padding-top: 1rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 47%;
+  background-color: var(--color-on-surface);
+}
+.mainInicio__sectionInicioBotones {
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  background-color: var(--color-on-surface);
+  height: 100%;
+  width: 75%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainRutinas {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  height: 100%;
+}
+.mainRutinas__contenedorRutina {
+  border-radius: 0.5rem;
+  margin-right: 3rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-on-surface);
+  width: 40%;
+  align-items: center;
+  height: 70%;
 }
 
 .cabecera {
@@ -54,20 +104,22 @@ body {
   height: 10%;
   background-color: var(--color-on-surface);
 }
-
-.logo {
+.cabecera .logo {
   margin-left: 2rem;
   align-items: center;
   height: 16%;
   width: 16%;
 }
 
-/* Nav */
-
 .cabecera__navegador {
   display: flex;
   justify-content: left;
   width: 40%;
+}
+.cabecera__imgInicioSesion {
+  width: 15%;
+  height: 100%;
+  align-items: center;
 }
 
 .navegador__cabeceraUl {
@@ -85,28 +137,6 @@ body {
   margin-left: 2rem;
 }
 
-/* Main Inicio*/
-
-.mainInicio {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  height: 80%;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.mainInicio__sectionInicioCaloriasEjercicios {
-  margin-top: 2rem;
-  width: 75%;
-  display: flex;
-  height: 80%;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 .sectionInicioCaloriasEjercicios__sectionCrearRutina {
   padding-top: 1rem;
   justify-content: space-around;
@@ -119,41 +149,30 @@ body {
   background-color: var(--color-on-surface);
 }
 
-.mainInicio__sectionCaloriasInicio {
-  padding-top: 1rem;
-  border-radius: 0.5rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 47%;
-  background-color: var(--color-on-surface);
-}
-
-.calorias {
-  padding-top: 1.5rem;
-  padding-left: 7%;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.sectionCaloriasInicio__caloriasDiarias{
+.sectionCaloriasInicio__caloriasDiarias {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   background-color: var(--color-surface);
   width: 80%;
   border-radius: 0.5rem;
   height: 25%;
 }
+.sectionCaloriasInicio__caloriasPersonales {
+  margin-top: 2rem;
+  background-color: var(--color-surface);
+  width: 80%;
+  border-radius: 0.5rem;
+  height: 20%;
+}
 
-.caloriasDiarias__sectionP {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
+.calorias {
+  padding-top: 1.5rem;
+  padding-left: 7%;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .caloriasDiarias__progressBar {
@@ -168,28 +187,14 @@ body {
   border-radius: 0.5rem;
   background-color: var(--color-on-surface);
 }
-
-/* Color de delante (avance) en Firefox */
 .caloriasDiarias__progressBar::-moz-progress-bar {
   background-color: var(--color-primary);
 }
-
-/* Color de delante (avance) en Chrome, Safari y Edge */
 .caloriasDiarias__progressBar::-webkit-progress-value {
   background-color: var(--color-primary);
 }
-
-/* Color de fondo en Chrome, Safari y Edge */
 .caloriasDiarias__progressBar::-webkit-progress-bar {
   background-color: var(--color-on-surface);
-}
-
-.sectionCaloriasInicio__caloriasPersonales {
-  margin-top: 1.5rem;
-  background-color: var(--color-surface);
-  width: 80%;
-  border-radius: 0.5rem;
-  height: 25%;
 }
 
 .rutinas__articuloRutina {
@@ -204,16 +209,9 @@ body {
   width: 28%;
 }
 
-.mainInicio__sectionInicioBotones {
-  margin-top: 2rem;
-  border-radius: 0.5rem;
-  display: flex;
-  background-color: var(--color-on-surface);
-  height: 100%;
-  width: 75%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+.articuloRutina__tipoEjercicio {
+  width: 50%;
+  height: 50%;
 }
 
 .sectionInicioBotones__articleBotones {
@@ -223,42 +221,6 @@ body {
   height: 40%;
   align-items: center;
 }
-
-.articleBotones__botonPrimary {
-  background-color: var(--color-primary);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  height: 45%;
-  width: 45%;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.boton__botonPrimaryCrearRutina{
-  margin-bottom: 3rem;
-  background-color: var(--color-primary);
-  padding-bottom: 0.2rem;
-  border-radius: 0.5rem;
-  height: 35%;
-  width: 100%;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.articleBotones__botonSurface {
-  background-color: var(--color-surface);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  height: 45%;
-  width: 45%;
-  justify-content: center;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
 .sectionInicioBotones__tituloInicioBotones {
   height: 50%;
   display: flex;
@@ -268,22 +230,55 @@ body {
   justify-content: space-around;
 }
 
+.articleBotones__botonPrimary {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 45%;
+  width: 45%;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.articleBotones__botonSurface {
+  background-color: var(--color-surface);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 45%;
+  width: 45%;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.articleBotones__boton {
+  width: 45%;
+  height: 100%;
+}
+
+.boton__botonPrimaryCrearRutina {
+  margin-bottom: 3rem;
+  background-color: var(--color-primary);
+  padding-bottom: 0.2rem;
+  border-radius: 0.5rem;
+  height: 35%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 .titulo {
   color: var(--color-surface);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 3rem;
   font-weight: 700;
 }
 
 .subtitulo {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
-}
-
-.articuloRutina__tipoEjercicio {
-  width: 50%;
-  height: 50%;
 }
 
 .sectionCrearRutina__rutinas {
@@ -291,25 +286,6 @@ body {
   justify-content: space-around;
   width: 90%;
   height: 80%;
-}
-
-.mainRutinas {
-  display: flex;
-  justify-content: center;
-  margin-top: 6rem;
-  height: 100%;
-}
-
-.mainRutinas__contenedorRutina {
-  border-radius: 0.5rem;
-  margin-right: 3rem;
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-on-surface);
-  width: 40%;
-  align-items: center;
-  height: 70%;
 }
 
 .contenedorRutina__rutina {
@@ -320,7 +296,7 @@ body {
   width: 85%;
 }
 
-.articleColor{
+.rutina__ejercicioCreado {
   height: 10%;
   align-items: center;
   display: flex;
@@ -331,8 +307,7 @@ body {
   width: 100%;
   border-radius: 0.5rem;
 }
-
-.articleColor2{
+.rutina__ejercicioCreado2 {
   height: 10%;
   align-items: center;
   display: flex;
@@ -343,8 +318,7 @@ body {
   width: 100%;
   border-radius: 0.5rem;
 }
-
-.rutina__crearEjercicio{
+.rutina__crearEjercicio {
   height: 10%;
   align-items: center;
   display: flex;
@@ -355,8 +329,7 @@ body {
   width: 100%;
   border-radius: 0.5rem;
 }
-
-.rutina__crearEjercicio2{
+.rutina__crearEjercicio2 {
   height: 10%;
   align-items: center;
   display: flex;
@@ -370,75 +343,24 @@ body {
 
 .ejercicioTexto {
   margin-left: 2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-
 }
 
 .ejercicioSeries {
   margin-right: 2rem;
   margin-left: 2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-}
-
-.articleBotones__boton {
-  width: 45%;
-  height: 100%;
 }
 
 .ejercicioAñadir {
   margin-left: 2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.mainInicio__EjercicioAñadirPeso {
-  padding-top: 1rem;
-  border-radius: 0.5rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 47%;
-  background-color: var(--color-on-surface);
-}
-
-.EjercicioAñadirPeso__registroPeso {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 1.5rem;
-  background-color: var(--color-surface);
-  width: 80%;
-  border-radius: 0.5rem;
-  height: 25%;
-}
-
-.EjercicioAñadirPeso__registroPeso2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 1.5rem;
-  background-color: var(--color-primary);
-  width: 80%;
-  border-radius: 0.5rem;
-  height: 25%;
-}
-
-.registroPeso__sectionP {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-}
-
-.registroPeso__texto,
-.registroPeso__accion {
-  padding-top: 0;
-  padding-bottom: 0;
-}
+/*# sourceMappingURL=main.css.map */

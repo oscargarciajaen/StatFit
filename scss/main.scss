@@ -1,24 +1,18 @@
 // 1. Settings
-@import 'settings/variables';
-
-// 2. Tools
-@import 'tools/mixins';
+@use 'settings/variables';
 
 // 3. Generic
-@import 'generic/reset';
+@use 'generic/reset';
 
 // 4. Elements
-@import 'elements/elements';
+@use 'elements/elements';
 
 // 5. Objects
-@import 'objects/layout';
+@use 'objects/layout';
 
 // 6. Components
-@import 'components/header';
-@import 'components/nav';
-@import 'components/inicio';
-@import 'components/buttons';
-@import 'components/rutinas';
-
-// 7. Utilities
-@import 'utilities/utilities';
+@use 'components/header';
+@use 'components/nav';
+@use 'components/inicio';
+@use 'components/_sectionInicio';
+@use 'components/rutinas';
