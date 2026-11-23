@@ -1,0 +1,62 @@
+.mainInicio {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-row: repeat(2, 1fr);
+  justify-items: center;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &__sectionInicioCaloriasEjercicios {
+    margin-top: 2rem;
+    width: 75%;
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__sectionCaloriasInicio {
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 47%;
+    background-color: var(--color-on-surface);
+  }
+
+  &__sectionInicioBotones {
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    background-color: var(--color-on-surface);
+    height: 100%;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.mainRutinas {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  height: 100%;
+
+  &__contenedorRutina {
+    border-radius: 0.5rem;
+    margin-right: 3rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-on-surface);
+    width: 40%;
+    align-items: center;
+    height: 70%;
+  }
+}

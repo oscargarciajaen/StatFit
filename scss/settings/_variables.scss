@@ -1,0 +1,17 @@
+@import url('https://googleapis.com');
+
+:root {
+  --color-primary: #52FFB8;
+  --color-surface: #CABAC8;
+  --color-on-surface: #2F323A;
+  --color-background: #1F2228;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-primary: #CBD4C2;
+    --color-surface: #FFFCFF;
+    --color-on-surface: #50514F;
+    --color-background: #989B9E;
+  }
+}

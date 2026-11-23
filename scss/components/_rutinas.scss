@@ -1,0 +1,103 @@
+.titulo {
+  color: var(--color-surface);
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.subtitulo {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sectionCrearRutina {
+  &__rutinas {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 80%;
+  }
+}
+
+.contenedorRutina {
+  &__rutina {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 85%;
+  }
+}
+
+.rutina {
+  &__ejercicioCreado {
+    height: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    background-color: var(--color-surface);
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  &__ejercicioCreado2 {
+    height: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    background-color: var(--color-primary);
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  &__crearEjercicio {
+    height: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5rem;
+    background-color: var(--color-surface);
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  &__crearEjercicio2 {
+    height: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5rem;
+    background-color: var(--color-primary);
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+.ejercicioTexto {
+  margin-left: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.ejercicioSeries {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.ejercicioAñadir {
+  margin-left: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}

@@ -1,0 +1,15 @@
+.cabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  background-color: var(--color-on-surface);
+
+  .logo {
+    margin-left: 2rem;
+    align-items: center;
+    height: 16%;
+    width: 16%;
+  }
+}

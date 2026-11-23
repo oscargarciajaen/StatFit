@@ -1,0 +1,24 @@
+// 1. Settings
+@import 'settings/variables';
+
+// 2. Tools
+@import 'tools/mixins';
+
+// 3. Generic
+@import 'generic/reset';
+
+// 4. Elements
+@import 'elements/elements';
+
+// 5. Objects
+@import 'objects/layout';
+
+// 6. Components
+@import 'components/header';
+@import 'components/nav';
+@import 'components/inicio';
+@import 'components/buttons';
+@import 'components/rutinas';
+
+// 7. Utilities
+@import 'utilities/utilities';
