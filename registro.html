@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>StatFit — Regístrate</title>
+</head>
+<body>
+    <script src="js/validacion.js" type="module"></script>
+    <header class="cabecera">
+        <section>
+            <img class="logo" src="assets/logo.png" alt="Logo">
+        </section>
+        <nav class="cabecera__navegador">
+            <ul class="navegador__cabeceraUl">
+                <li class="cabeceraUl__cabeceraLi"><a href="index.html">Inicio</a></li>
+                <li class="cabeceraUl__cabeceraLi"><a href="ejercicios.html">Ejercicios</a></li>
+                <li class="cabeceraUl__cabeceraLi"><a href="calorias.html">Calorías</a></li>
+                <img class="cabeceraUl__imgInicioSesion" src="/assets/iconoSesion.png" alt="IconoInicioSesion">
+            </ul>
+        </nav>
+    </header>
+    <main class="main-formularios">
+        <section class="main-formularios__registro" aria-labelledby="titulo-registro">
+            <form class="formulario" action="#" method="POST">
+                <header class="formulario__cabecera">
+                    <img class="formulario__logo" src="logo.png" alt="Logo">
+                    <h1 class="formulario__titulo" id="titulo-registro">Regístrate</h1>
+                </header>
+
+                <article class="formulario__grupo">
+                    <label class="formulario__etiqueta" for="nombre">Nombre Usuario</label>
+                    <input class="formulario__campo" type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Garcia" required>
+                </article>
+
+                <article class="formulario__grupo">
+                    <label class="formulario__etiqueta" for="correo">Correo</label>
+                    <input class="formulario__campo" type="email" id="correo" name="correo" aria-label="Correo electrónico" placeholder="Ej. carlosgarcia@gmail.com" required>
+                </article>
+
+                <article class="formulario__grupo">
+                    <label class="formulario__etiqueta" for="password">Contraseña</label>
+                    <input class="formulario__campo" type="password" id="password" name="password" placeholder="**********" required>
+                </article>
+
+                <article class="formulario__grupo">
+                    <label class="formulario__etiqueta" for="confirm-password">Confirmar contraseña</label>
+                    <input class="formulario__campo" type="password" id="confirm-password" name="confirm-password" placeholder="**********" required>
+                </article>
+
+                <article class="formulario__grupo">
+                    <label class="formulario__etiqueta" for="fecha">Fecha de nacimiento</label>
+                    <input class="formulario__campo formulario__campo--fecha" type="date" id="fecha" name="fecha" required>
+                </article>
+
+                <article class="formulario__grupo formulario__grupo--condiciones">
+                    <label class="formulario__etiqueta formulario__etiqueta--inline" for="condiciones">Acepto condiciones:</label>
+                    <input class="formulario__checkbox" type="checkbox" id="condiciones" name="condiciones" required>
+                </article>
+
+                <button class="formulario__boton" type="submit">Registrarse</button>
+
+                <footer class="formulario__pie">
+                    <p class="formulario__texto-pie">
+                        ¿Tienes cuenta? <a class="formulario__enlace" href="#">Inicia Sesion</a>
+                    </p>
+                </footer>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

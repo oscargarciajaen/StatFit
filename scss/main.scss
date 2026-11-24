@@ -16,3 +16,8 @@
 @use 'components/inicio';
 @use 'components/_sectionInicio';
 @use 'components/rutinas';
+
+@use "components/mostrarEjercicios";
+@use "components/detalleEjercicio";
+
+@use "components/formularioRegistro";
