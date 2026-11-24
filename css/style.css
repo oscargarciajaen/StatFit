@@ -444,17 +444,25 @@ body {
 }
 
 /* Formulario */
-
 .main-formularios {
-  min-height: calc(100vh - 10vh);
+  height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem 1rem;
+  align-items: flex-start;
+  padding: 2rem 1rem 4rem;
   overflow-y: auto;
 }
 
-.main-formularios__registro {
+/* Modificador para apilar o alinear el formulario junto a los mensajes enviados */
+.main-formularios--contacto {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.main-formularios__registro,
+.main-formularios__mensajes {
   width: 100%;
   max-width: 440px;
 }
@@ -504,6 +512,12 @@ body {
   margin-top: 0.25rem;
 }
 
+.formulario__etiqueta-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .formulario__etiqueta {
   font-size: 0.95rem;
   font-weight: 500;
@@ -515,6 +529,12 @@ body {
   cursor: pointer;
 }
 
+.formulario__contador {
+  font-size: 0.8rem;
+  color: var(--color-surface);
+  opacity: 0.8;
+}
+
 .formulario__campo {
   width: 100%;
   padding: 0.65rem 0.8rem;
@@ -524,6 +544,11 @@ body {
   color: var(--color-on-surface);
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
+}
+
+.formulario__campo--textarea {
+  resize: vertical;
+  min-height: 90px;
 }
 
 .formulario__campo:focus {
@@ -569,4 +594,73 @@ body {
 
 .grupo__error {
   color: red;
+  font-size: 0.85rem;
+}
+
+/* Vista de mensajes enviados */
+.mensajes-enviados {
+  background-color: var(--color-on-surface);
+  color: var(--color-surface);
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.mensajes-enviados__titulo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-surface);
+}
+
+.mensajes-enviados__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mensaje-card {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  padding: 0.85rem 1rem;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.mensaje-card__cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mensaje-card__motivo {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-on-surface);
+}
+
+.mensaje-card__borrar {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mensaje-card__autor {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.mensaje-card__texto {
+  font-size: 0.9rem;
+  line-height: 1.4;
 }

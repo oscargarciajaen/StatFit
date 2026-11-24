@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>StatFit — Contacto</title>
+</head>
+<body>
+<script src="js/contacto.js" type="module"></script>
+<header class="cabecera">
+    <section>
+        <img class="logo" src="assets/logo.png" alt="Logo">
+    </section>
+    <nav class="cabecera__navegador">
+        <ul class="navegador__cabeceraUl">
+            <li class="cabeceraUl__cabeceraLi"><a href="index.html">Inicio</a></li>
+            <li class="cabeceraUl__cabeceraLi"><a href="ejercicios.html">Ejercicios</a></li>
+            <li class="cabeceraUl__cabeceraLi"><a href="calorias.html">Calorías</a></li>
+            <img class="cabeceraUl__imgInicioSesion" src="/assets/iconoSesion.png" alt="IconoInicioSesion">
+        </ul>
+    </nav>
+</header>
+
+<main class="main-formularios main-formularios--contacto">
+    <section class="main-formularios__registro" aria-labelledby="titulo-contacto">
+        <form class="formulario" id="form-contacto" action="#" method="POST" novalidate>
+            <header class="formulario__cabecera">
+                <img class="formulario__logo" src="assets/logo.png" alt="Logo">
+                <h1 class="formulario__titulo" id="titulo-contacto">Contacto</h1>
+            </header>
+
+            <article class="formulario__grupo">
+                <label class="formulario__etiqueta" for="nombre">Nombre</label>
+                <input class="formulario__campo" type="text" id="nombre" name="nombre" placeholder="Ej. Carlos García" minlength="3" maxlength="40" required>
+            </article>
+
+            <article class="formulario__grupo">
+                <label class="formulario__etiqueta" for="correo">Correo</label>
+                <input class="formulario__campo" type="email" id="correo" name="correo" aria-label="Correo electrónico" placeholder="Ej. carlosgarcia@gmail.com" required>
+            </article>
+
+            <article class="formulario__grupo">
+                <label class="formulario__etiqueta" for="telefono">Teléfono (opcional)</label>
+                <input class="formulario__campo" type="tel" id="telefono" name="telefono" placeholder="Ej. 600123456">
+            </article>
+
+            <article class="formulario__grupo formulario__grupo--condiciones">
+                <label class="formulario__etiqueta formulario__etiqueta--inline" for="prefiero-llamada">Prefiero que me llaméis</label>
+                <input class="formulario__checkbox" type="checkbox" id="prefiero-llamada" name="prefiero-llamada">
+            </article>
+
+            <article class="formulario__grupo">
+                <label class="formulario__etiqueta" for="motivo">Motivo de consulta</label>
+                <select class="formulario__campo formulario__campo--select" id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Selecciona un motivo...</option>
+                    <option value="rutina">Duda sobre una rutina o ejercicio</option>
+                    <option value="calorias">Error en el cálculo de calorías</option>
+                    <option value="proponer">Proponer un nuevo ejercicio</option>
+                    <option value="cuenta">Incidencia con mi cuenta</option>
+                </select>
+            </article>
+
+            <article class="formulario__grupo">
+                <header class="formulario__etiqueta-cabecera">
+                    <label class="formulario__etiqueta" for="mensaje">Mensaje</label>
+                    <span class="formulario__contador" id="contador-caracteres">0 / 300</span>
+                </header>
+                <textarea class="formulario__campo formulario__campo--textarea" id="mensaje" name="mensaje" rows="4" minlength="15" maxlength="300" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+            </article>
+
+            <button class="formulario__boton" type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <section class="main-formularios__mensajes" aria-labelledby="titulo-mensajes">
+        <section class="mensajes-enviados">
+            <h2 class="mensajes-enviados__titulo" id="titulo-mensajes">Mensajes enviados</h2>
+            <section class="mensajes-enviados__lista" id="lista-mensajes">
+
+            </section>
+        </section>
+    </section>
+</main>
+</body>
+</html>
