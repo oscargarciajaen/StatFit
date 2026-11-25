@@ -21,11 +21,11 @@
         </ul>
     </nav>
 </header>
-<main class="main-formularios">
+<main class="main-formularios main-formularios--registro">
     <section class="main-formularios__registro" aria-labelledby="titulo-registro">
-        <form class="formulario" action="#" method="POST" novalidate>
+        <form class="formulario" id="form-registro" action="#" method="POST" novalidate>
             <header class="formulario__cabecera">
-                <img class="formulario__logo" src="logo.png" alt="Logo">
+                <img class="formulario__logo" src="assets/logo.png" alt="Logo">
                 <h1 class="formulario__titulo" id="titulo-registro">Regístrate</h1>
             </header>
 
@@ -67,6 +67,25 @@
                 </p>
             </footer>
         </form>
+    </section>
+
+    <section class="main-formularios__mensajes" aria-labelledby="titulo-usuarios">
+        <section class="mensajes-enviados">
+            <h2 class="mensajes-enviados__titulo" id="titulo-usuarios">Usuarios registrados</h2>
+            <section class="mensajes-enviados__lista" id="lista-usuarios">
+                <article class="mensaje-card">
+                    <header class="mensaje-card__cabecera">
+                        <h3 class="mensaje-card__motivo">Carlos</h3>
+                        <section class="mensaje-card__acciones">
+                            <button class="mensaje-card__editar" type="button">Editar</button>
+                            <button class="mensaje-card__borrar" type="button">Borrar</button>
+                        </section>
+                    </header>
+                    <p class="mensaje-card__autor">carlosgarcia@gmail.com</p>
+                    <p class="mensaje-card__texto">Nacimiento: 2000-05-12</p>
+                </article>
+            </section>
+        </section>
     </section>
 </main>
 </body>

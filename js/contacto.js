@@ -6,6 +6,11 @@ import {
     validarMensaje
 } from "./validacion.js"
 
+import { obtenerTodos, crear, borrar } from "./almacen.js"
+
+const COLECCION = "mensajes"
+
+
 const nombre = document.querySelector("#nombre")
 const correo = document.querySelector("#correo")
 const telefono = document.querySelector("#telefono")
@@ -231,18 +236,14 @@ function limpiarErrorMensaje() {
     }
 }
 
-function crearMensaje(datos) {
+function pintarMensaje(datos) {
     const mensajesEnviados = document.querySelector(".mensajes-enviados")
 
     let lista = mensajesEnviados.querySelector(".mensajes-enviados__lista")
-    if (!lista) {
-        lista = document.createElement("section")
-        lista.className = "mensajes-enviados__lista"
-        mensajesEnviados.appendChild(lista)
-    }
 
     const article = document.createElement("article")
     article.className = "mensaje-card"
+    article.dataset.id = datos.id
 
     const header = document.createElement("header")
     header.className = "mensaje-card__cabecera"
@@ -258,6 +259,7 @@ function crearMensaje(datos) {
     btnBorrar.textContent = "Borrar"
 
     btnBorrar.addEventListener("click", () => {
+        borrar(COLECCION, datos.id)
         article.remove()
     })
 
@@ -278,10 +280,11 @@ function crearMensaje(datos) {
 
     header.append(span, btnBorrar)
     article.append(header, pAutor, pTexto)
-
     lista.appendChild(article)
+}
 
-    vaciarFormulario()
+function mostrarTodos() {
+    obtenerTodos(COLECCION).forEach(pintarMensaje)
 }
 
 function vaciarFormulario() {
@@ -328,6 +331,10 @@ boton.addEventListener("click", (e) => {
             mensaje: mensaje.value.trim()
         }
 
-        crearMensaje(nuevoMensaje)
+        const guardado = crear(COLECCION, nuevoMensaje)
+        pintarMensaje(guardado)
+        vaciarFormulario()
     }
 })
+
+mostrarTodos()

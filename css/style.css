@@ -1,5 +1,4 @@
-@import url('https://googleapis.com');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -597,6 +596,11 @@ body {
   font-size: 0.85rem;
 }
 
+.grupo__editar {
+  color: orange;
+  font-size: 0.85rem;
+}
+
 /* Vista de mensajes enviados */
 .mensajes-enviados {
   background-color: var(--color-on-surface);
@@ -663,4 +667,44 @@ body {
 .mensaje-card__texto {
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+/* Registro: mismo layout de dos columnas que contacto */
+.main-formularios--registro {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Acciones de cada usuario */
+.mensaje-card__acciones {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.mensaje-card__editar {
+  background-color: transparent;
+  border: 1px solid orange;
+  color: orange;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mensaje-card__editar:hover {
+  background-color: orange;
+  color: var(--color-on-surface);
+}
+
+.mensaje-card__borrar:hover {
+  background-color: red;
+  color: var(--color-surface);
+}
+
+/* Tarjeta que se está editando */
+.mensaje-card--editando {
+  outline: 2px solid orange;
 }
