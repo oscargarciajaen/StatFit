@@ -3,13 +3,11 @@ export function validarNombre(nombre) {
     const min = nombre.minLength
     const max = nombre.maxLength
 
-    if (nombre.required && texto === "") {
-        return "El nombre es obligatorio"
+    if (nombre.type === "text") {
+        if (min > 0 && texto.length < min || max > 0 && texto.length > max) {
+            return `El nombre debe tener una longitud entre ${min} y ${max}`
+        } else {return null}
     }
-    if (nombre.type === "text" && (texto.length < min || texto.length > max)) {
-        return `El nombre debe tener una longitud entre ${min} y ${max}`
-    }
-    return null
 }
 
 export function validarCorreo(correo) {
@@ -26,19 +24,14 @@ export function validarCorreo(correo) {
 }
 
 export function validarContraseña(password) {
-    const min = password.minLength
-    const regex = new RegExp(`^(?=.*[A-Z])(?=.*\\d).{${min},}$`)
+    const regex = /^(?=.*[A-Z])(?=.*\d).{8,}$/
     const texto = password.value.trim()
 
     if (password.required && texto === "") {
         return "La contraseña es obligatoria"
     }
-    if (password.type === "password" && texto !== "") {
-        if (regex.test(texto)) {
-            return null
-        } else {
-            return `La longitud debe ser ${min}, contener 1 número y 1 mayúscula`
-        }
+    if (password.type === "password" && texto !== "" && !regex.test(texto)) {
+        return "Mínimo 8 caracteres, con al menos 1 número y 1 mayúscula"
     }
     return null
 }

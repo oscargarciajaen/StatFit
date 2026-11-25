@@ -6,10 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="9ed0da11-06d0-40db-8f22-97ba42266567" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/almacen.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/almacen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/contacto.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/contacto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InicioSesion.html" beforeDir="false" afterPath="$PROJECT_DIR$/InicioSesion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicios.html" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/registro.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/registro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/validacion.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validacion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/registro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rutinas.html" beforeDir="false" afterPath="$PROJECT_DIR$/rutinas.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,61 +44,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000063782" />
-      <entry key="MS500" value="1.006006727402493" />
-      <entry key="S2" value="1.9971188571549072" />
-      <entry key="S5" value="5.705326202247366" />
-      <entry key="S10" value="9.293785845600018" />
-      <entry key="S30" value="13.275940915149418" />
-      <entry key="S60" value="14.63881619096063" />
-      <entry key="M2" value="16.61366236076443" />
-      <entry key="M5" value="24.652087657257734" />
-      <entry key="M10" value="33.33876057723662" />
-      <entry key="M15" value="38.01678393343446" />
-      <entry key="M30" value="47.35138876652476" />
-      <entry key="H1" value="69.18564026473912" />
-      <entry key="H2" value="123.28792512785506" />
-      <entry key="H4" value="321.91480776889193" />
-      <entry key="D1" value="2124.0840634200545" />
-      <entry key="W1" value="3476.378865994236" />
+      <entry key="MS100" value="1.0000005146161306" />
+      <entry key="MS500" value="1.0566344488545227" />
+      <entry key="S2" value="1.731810156832081" />
+      <entry key="S5" value="3.2272019379814347" />
+      <entry key="S10" value="5.822744068701402" />
+      <entry key="S30" value="13.472158768079677" />
+      <entry key="S60" value="18.982668069841367" />
+      <entry key="M2" value="23.426272909122197" />
+      <entry key="M5" value="31.969223672028328" />
+      <entry key="M10" value="46.01784689846499" />
+      <entry key="M15" value="60.32034388960101" />
+      <entry key="M30" value="111.95613000282448" />
+      <entry key="H1" value="223.10436729245905" />
+      <entry key="H2" value="388.5547736072835" />
+      <entry key="H4" value="646.7987784771097" />
+      <entry key="D1" value="2533.0571465759517" />
+      <entry key="W1" value="4045.1614021037217" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.5019018684029464E-97" />
-      <entry key="S2" value="7.072412252428536E-25" />
-      <entry key="S5" value="2.1868904454273219E-10" />
-      <entry key="S10" value="1.4788138643614147E-5" />
-      <entry key="S30" value="0.024546774648461216" />
-      <entry key="S60" value="0.15834129294935315" />
-      <entry key="M2" value="0.4608315213323158" />
-      <entry key="M5" value="1.3194611455212655" />
-      <entry key="M10" value="2.1971421237516293" />
-      <entry key="M15" value="2.662257348437761" />
-      <entry key="M30" value="3.457426074187157" />
-      <entry key="H1" value="5.022482237051452" />
-      <entry key="H2" value="9.371757971052848" />
-      <entry key="H4" value="27.411556146672876" />
-      <entry key="D1" value="243.2953968644423" />
-      <entry key="W1" value="443.45207110359513" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="5.86730243019804E-124" />
+      <entry key="S5" value="6.454620997269582E-50" />
+      <entry key="S10" value="3.4403644470594238E-25" />
+      <entry key="S30" value="1.1006965026509917E-8" />
+      <entry key="S60" value="1.48172696049802E-4" />
+      <entry key="M2" value="0.017209796563075745" />
+      <entry key="M5" value="0.3193161297711608" />
+      <entry key="M10" value="1.725302012384274" />
+      <entry key="M15" value="4.931445261011773" />
+      <entry key="M30" value="19.776743507624758" />
+      <entry key="H1" value="46.54251990549245" />
+      <entry key="H2" value="76.81983196522695" />
+      <entry key="H4" value="110.57511100899042" />
+      <entry key="D1" value="339.95490047271227" />
+      <entry key="W1" value="559.2547103394947" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.5304064380286006E-5" />
-      <entry key="MS500" value="0.13870601006345487" />
-      <entry key="S2" value="1.5573880796428072" />
-      <entry key="S5" value="5.470634944542375" />
-      <entry key="S10" value="9.158559869765375" />
-      <entry key="S30" value="13.24782337969288" />
-      <entry key="S60" value="14.764364164011724" />
-      <entry key="M2" value="17.05159576673391" />
-      <entry key="M5" value="25.95473184020894" />
-      <entry key="M10" value="35.52308629053399" />
-      <entry key="M15" value="40.668782537935165" />
-      <entry key="M30" value="50.801955754015516" />
-      <entry key="H1" value="74.2030143545438" />
-      <entry key="H2" value="132.65488115646514" />
-      <entry key="H4" value="349.31911368279737" />
-      <entry key="D1" value="2367.3685459503395" />
-      <entry key="W1" value="3919.828085276898" />
+      <entry key="MS100" value="0.9395232360705371" />
+      <entry key="MS500" value="1.0436106823157996" />
+      <entry key="S2" value="1.7265862152377527" />
+      <entry key="S5" value="3.2230128793917894" />
+      <entry key="S10" value="5.818763690661039" />
+      <entry key="S30" value="13.46906329761784" />
+      <entry key="S60" value="18.98064725986551" />
+      <entry key="M2" value="23.442011580420694" />
+      <entry key="M5" value="32.2866257387799" />
+      <entry key="M10" value="47.736989193570736" />
+      <entry key="M15" value="65.23890506257919" />
+      <entry key="M30" value="131.70643264550532" />
+      <entry key="H1" value="269.61577016396126" />
+      <entry key="H2" value="465.3485804582522" />
+      <entry key="H4" value="757.3539898636144" />
+      <entry key="D1" value="2872.998818663774" />
+      <entry key="W1" value="4604.412818500786" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -101,26 +110,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/mago_pop/2Daw/Diseño/StatFit/js&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/721/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "/home/mago_pop/2Daw/Diseño/StatFit/js",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/snap/webstorm/721/plugins/javascript-plugin/jsLanguageServicesImpl/external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js" />
@@ -128,9 +138,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
@@ -174,7 +184,8 @@
       <workItem from="1795507712938" duration="35000" />
       <workItem from="1795512251186" duration="4332000" />
       <workItem from="1795529037662" duration="16912000" />
-      <workItem from="1795598496787" duration="6700000" />
+      <workItem from="1795598496787" duration="8515000" />
+      <workItem from="1795627031821" duration="8891000" />
     </task>
     <servers />
   </component>

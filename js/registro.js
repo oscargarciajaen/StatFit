@@ -6,6 +6,15 @@ import {
     validarFecha
 } from "./validacion.js"
 
+import {
+    obtenerTodos,
+    crear,
+    borrar, actualizar
+} from "./almacen.js";
+
+const COLECCION = "usuarios"
+
+const formulario = document.querySelector("#form-registro")
 const nombre = document.querySelector("#nombre")
 const correo = document.querySelector("#correo")
 const password = document.querySelector("#password")
@@ -264,23 +273,19 @@ boton.addEventListener("click", (e) => {
     e.preventDefault()
 
     const errorNombre = validarNombre(nombre)
-    if (errorNombre !== null) mostrarErrorNombre(errorNombre)
+    errorNombre !== null ? mostrarErrorNombre(errorNombre) : limpiarErrorNombre()
 
     const errorCorreo = validarCorreo(correo)
-    limpiarErrorCorreo()
-    if (errorCorreo !== null) mostrarErrorCorreo(errorCorreo)
+    errorCorreo !== null ? mostrarErrorCorreo(errorCorreo) : limpiarErrorCorreo()
 
     const errorPassword = validarContraseña(password)
-    limpiarErrorContraseña()
-    if (errorPassword !== null) mostrarErrorContraseña(errorPassword)
+    errorPassword !== null ? mostrarErrorContraseña(errorPassword) : limpiarErrorContraseña()
 
     const errorCpassword = validarContraseñaConfirmacion(cpassword, password)
-    limpiarErrorContraseñaConfirmacion()
-    if (errorCpassword !== null) mostrarErrorContraseñaConfirmacion(errorCpassword)
+    errorCpassword !== null ? mostrarErrorContraseñaConfirmacion(errorCpassword) : limpiarErrorContraseñaConfirmacion()
 
     const errorFecha = validarFecha(fecha)
-    limpiarErrorFecha()
-    if (errorFecha !== null) mostrarErrorFecha(errorFecha)
+    errorFecha !== null ? mostrarErrorFecha(errorFecha) : limpiarErrorFecha()
 
     const errorCondiciones = aceptado()
 
@@ -296,7 +301,141 @@ boton.addEventListener("click", (e) => {
             nombre: nombre.value.trim(),
             correo: correo.value.trim(),
             fechaNacimiento: fecha.value.trim(),
-            condiciones: condiciones.checked
         }
+
+        crear(COLECCION, nuevoUsuario)
+        vaciarFormulario()
+        mostrarUsuarios()
     }
 })
+
+function mostrarUsuarios() {
+    const todos = obtenerTodos(COLECCION)
+    const listaUsuarios = document.querySelector("#lista-usuarios")
+    while (listaUsuarios.firstChild) {
+        listaUsuarios.removeChild(listaUsuarios.lastChild)
+    }
+
+    todos.forEach( it => {
+
+        const articleUsuario = document.createElement("article")
+        articleUsuario.className = "mensaje-card"
+
+        const header = document.createElement("header")
+        header.className = "mensaje-card__cabecera"
+
+        const nombreUsuario = document.createElement("h3")
+        nombreUsuario.className = "mensaje-card__motivo"
+        nombreUsuario.textContent = it.nombre
+
+        const sectionAcciones = document.createElement("section")
+        sectionAcciones.className = "mensaje-card__acciones"
+
+        const editarButton = document.createElement("Button")
+        editarButton.className = "mensaje-card__editar"
+        editarButton.textContent= "Editar"
+
+        editarButton.addEventListener("click", () => {
+
+            nombre.value = it.nombre
+            correo.value = it.correo
+            fecha.value = it.fechaNacimiento
+            condiciones.checked = true
+
+            const botonActualizar = document.createElement("button")
+            botonActualizar.className = "formulario__boton"
+            botonActualizar.type="submit"
+            botonActualizar.style.background = "orange"
+            botonActualizar.textContent = "Actualizar"
+            boton.style.visibility = "hidden"
+            formulario.appendChild(botonActualizar)
+            botonActualizar.addEventListener("click", (e) => {
+                e.preventDefault()
+
+                const errorNombre = validarNombre(nombre)
+                errorNombre !== null ? mostrarErrorNombre(errorNombre) : limpiarErrorNombre()
+
+                const errorCorreo = validarCorreo(correo)
+                errorCorreo !== null ? mostrarErrorCorreo(errorCorreo) : limpiarErrorCorreo()
+
+                const errorPassword = validarContraseña(password)
+                errorPassword !== null ? mostrarErrorContraseña(errorPassword) : limpiarErrorContraseña()
+
+                const errorCpassword = validarContraseñaConfirmacion(cpassword, password)
+                errorCpassword !== null ? mostrarErrorContraseñaConfirmacion(errorCpassword) : limpiarErrorContraseñaConfirmacion()
+
+                const errorFecha = validarFecha(fecha)
+                errorFecha !== null ? mostrarErrorFecha(errorFecha) : limpiarErrorFecha()
+
+                const errorCondiciones = aceptado()
+
+                if (
+                    errorNombre === null &&
+                    errorCorreo === null &&
+                    errorPassword === null &&
+                    errorCpassword === null &&
+                    errorFecha === null &&
+                    errorCondiciones === null
+                ) {
+                    const usuarioActualizado = {
+                        nombre: nombre.value.trim(),
+                        correo: correo.value.trim(),
+                        fechaNacimiento: fecha.value.trim(),
+                    }
+
+                    actualizar(COLECCION, it.id, usuarioActualizado)
+                    vaciarFormulario()
+                    mostrarUsuarios()
+                    botonActualizar.style.visibility = "hidden"
+                    boton.style.visibility = "visible"
+                }
+            })
+        })
+
+        const borrarButton = document.createElement("Button")
+        borrarButton.className = "mensaje-card__borrar"
+        borrarButton.textContent= "Borrar"
+
+        borrarButton.addEventListener("click", () => {
+            alert("¿Seguro que quieres borar?")
+            borrar(COLECCION, it.id)
+            mostrarUsuarios()
+        })
+
+        const pGmail = document.createElement("p")
+        pGmail.className = "mensaje-card__autor"
+        pGmail.textContent = it.correo
+
+        const pId = document.createElement("p")
+        pId.className = "mensaje-card__autor"
+        pId.textContent = it.id
+
+        const pFecha = document.createElement("p")
+        pFecha.className = "mensaje-card__texto"
+        pFecha.textContent = "Nacimiento: " + it.fechaNacimiento
+
+        sectionAcciones.appendChild(editarButton)
+        sectionAcciones.appendChild(borrarButton)
+
+        header.appendChild(nombreUsuario)
+        header.appendChild(sectionAcciones)
+
+        articleUsuario.appendChild(header)
+        articleUsuario.appendChild(pGmail)
+        articleUsuario.appendChild(pFecha)
+        articleUsuario.appendChild(pId)
+
+        listaUsuarios.appendChild(articleUsuario)
+    })
+}
+
+function vaciarFormulario() {
+    nombre.value = ""
+    correo.value = ""
+    password.value = ""
+    cpassword.value = ""
+    fecha.value = ""
+    condiciones.checked = false
+}
+
+mostrarUsuarios()
